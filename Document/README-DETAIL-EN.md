@@ -1,19 +1,19 @@
-# VideoLab - 高性能且灵活的 iOS 视频剪辑与特效框架
+# VideoLab - High-performance and flexible video editing and effects framework
 
-## VideoLab 是什么？
+## What is VideoLab?
 
-VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，提供了更 AE(Adobe After Effect)化的使用方式。框架核心基于 AVFoundation 与 Metal。目前已有的特性：
+VideoLab is an open source, high-performance and flexible iOS video editing and effects framework that offers a more AE (Adobe After Effect) approach to use. The core of the framework is based on AVFoundation and Metal. Currently available features: 
 
-* 高性能实时剪辑与导出。
-* 高自由度组合视频，图片，音频。
-* 支持音频音高设置，音量调节。
-* 支持 CALayer 矢量动画，可以支持复杂的文字动画。
-* 支持关键帧动画。
-* 支持类似于 AE 的预合成。
-* 支持转场。
-* 支持自定义各类特效，如 LUT 滤镜，Zoom Blur 等等（MSL 编写脚本）。
+* High-performance real-time video editing and exporting.
+* Highly free combination of video, image, audio.
+* Support audio pitch setting and volume adjustment.
+* Support CALayer vector animations, so complex text animations are supported.
+* Support keyframe animation.
+* Support After Effect-like pre-compose.
+* Support transitions.
+* Support custom effects. Such as LUT filter, zoom blur, etc.
 
-以下是一些特性的 gif（多图层、文字动画、关键帧动画、预合成及转场）：
+The following are some GIFs of features(multiple layers, text animation, keyframe animation, pre compose, and transition)
 
 <p align="left">
     <img src="./Resource/multiple-layer-demo.gif" width="240">
@@ -23,84 +23,83 @@ VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，
     <img src="./Resource/transition-demo.gif" width="240">
 </p>
 
-仓库地址：https://github.com/ruanjx/VideoLab
+Github repo: https://github.com/ruanjx/VideoLab
 
-本文将和大家分享 AVFoundation 视频剪辑流程，以及 VideoLab 框架的设计与实现。
+In this article, we will share the AVFoundation video editing workflow, and the design and implementation of the VideoLab framework.
 
-## AVFoundation 视频剪辑流程
+## AVFoundation video editing workflow
 
-在开始介绍之前，建议刚接触视频剪辑的同学可以先看下如下 WWDC 视频：
+Before we begin, it is recommended that those who are new to video editing watch the following WWDC video: 
 
 * [Advanced Editing with AV Foundation](https://developer.apple.com/videos/play/wwdc2013/612/)
 * [Edit and play back HDR video with AVFoundation](https://developer.apple.com/videos/play/wwdc2020/10009/)
 
-
-让我们来看下 AVFoundation 视频剪辑的整体工作流程：
+Let's have a look at the overall workflow of AVFoundation video editing: 
 
 <img src="./Resource/VideoLab-Editing-with-AVFoundation-Workflow.png" width="700">
 
-我们来拆解下步骤：
+Let's break down the steps:
 
-1. 创建一个或多个 `AVAsset`。
-2. 创建 `AVComposition`、`AVVideoComposition` 及 `AVAudioMix`。其中 `AVComposition` 指定了音视频轨道的时间对齐，`AVVideoComposition` 指定了视频轨道在任何给定时间点的几何变换与混合，`AVAudioMix` 管理音频轨道的混合参数。
-3. 我们可以使用这三个对象来创建 `AVPlayerItem`，并从中创建一个 `AVPlayer` 来播放编辑效果。
-4. 此外，我们也可以使用这三个对象来创建 `AVAssetExportSession`，用来将编辑结果写入文件。
+1. Create one or more `AVAsset`.
+2. Create `AVComposition`, `AVVideoComposition` and `AVAudioMix`. `AVComposition` specifies the temporal alignment of the source tracks. `AVVideoComposition` specifies geometry transformation and blending of tracks at any given time point, and `AVAudioMix` manages the mixing parameters of the audio tracks.
+3. we can use these three objects to create `AVPlayerItem` and from it we can create an `AVPlayer` to play editing effects.
+4. In addition, we can also use these three objects to create `AVAssetExportSession` to write the editing results to a file.
 
 ### AVComposition
 
-让我们先来看下 `AVComposition`，`AVComposition` 是一个或多个 `AVCompositionTrack` 音视频轨道的集合。其中 `AVCompositionTrack` 又可以包含来自多个 `AVAsset` 的 `AVAssetTrack`。
+Let's begin by looking at `AVComposition`, which is a collection of one or more `AVCompositionTrack` audio and video tracks. Where `AVCompositionTrack` can contain `AVAssetTrack` from multiple `AVAsset`.
 
-下图的例子，将两个 `AVAsset` 中的音视频 `AVAssetTrack` 组合到 `AVComposition` 的音视频 `AVCompositionTrack` 中。
+In the following illustration, the audio/video `AVAssetTrack` from two `AVAssets` are combined into the audio/video `AVCompositionTrack` of `AVComposition`.
 
 <img src="./Resource/VideoLab-AVComposition.png" width="600">
 
 ### AVVideoComposition
 
-设想下图所示的场景， `AVComposition` 包含两个 `AVCompositionTrack`。我们在 T1 时间点需要混合两个 `AVCompositionTrack` 的图像。为了达到这个目的，我们需要使用 `AVVideoComposition`。
+Imagine the scene shown below, where `AVComposition` contains two `AVCompositionTrack`. We need to blend the images of both `AVCompositionTrack` at time point T1. To do this, we need to use `AVVideoComposition`.
 
-<img src="./Resource/VideoLab-AVComposition2.png" width="500">
+<img src=". /Resource/VideoLab-AVComposition2.png" width="500">
 
-`AVVideoComposition` 可以用来指定渲染大小和渲染缩放，以及帧率。此外，还存储了实现 `AVVideoCompositionInstructionProtocol` 协议的 Instruction（指令）数组，这些 Instruction 存储了混合的参数。有了这些混合参数之后，`AVVideoComposition` 可以通过一个实现 `AVVideoCompositing` 协议的 Compositor（混合器） 来混合对应的图像帧。
+`AVVideoComposition` can be used to specify the render size and render scaling, as well as the frame rate. In addition, an array of Instructions implementing the `AVVideoCompositionInstructionProtocol` protocol is stored, and these Instructions store blending parameters. With these blending parameters, `AVVideoComposition` can blend the corresponding image frames with a Compositor that implements the `AVVideoCompositing` protocol.
 
-整体工作流如下图所示：
+The overall workflow is shown in the following illustration:
 
 <img src="./Resource/VideoLab-AVVideoComposition.png" width="500">
 
-让我们聚焦到 Compositor，我们有多个原始帧，需要处理并输出新的一帧。工作流程如下图所示：
+Let's focus on Compositor, where we have multiple original frames that need to be processed and a new one output. The workflow is shown in the following diagram:
 
 <img src="./Resource/VideoLab-AVVideoCompositing.png" width="500">
 
-流程可分解为：
+The flow can be broken down as follows:
 
-1. `AVAsynchronousVideoCompositionRequest` 绑定了当前时间的一系列原始帧，以及当前时间所在的 Instruction。
-2. 收到 `startVideoCompositionRequest:` 回调，并接收到这个 Request。
-3. 根据原始帧及 Instruction 相关混合参数，渲染得到合成的帧。
-4. 调用 `finishWithComposedVideoFrame:` 交付渲染后的帧。
+1. `AVAsynchronousVideoCompositionRequest` binds a series of original frames for current time, and the Instruction where the current time is located.
+2. The `startVideoCompositionRequest:` callback is received, and the Request is taken.
+3. Render the composite frame based on the original frame and the instruction-related blending parameters.
+4. Call `finishWithComposedVideoFrame:` to deliver the rendered frame.
 
 ### AVAudioMix
 
-使用 `AVAudioMix`，你可以在 `AVComposition` 的音频轨道上处理音频。`AVAudioMix` 包含一组的 `AVAudioMixInputParameters`，每个 `AVAudioMixInputParameters` 对应一个音频的 `AVCompositionTrack`。如下图所示：
+Using `AVAudioMix`, you can process audio on the audio track of `AVComposition`. `AVAudioMix` contains a set of `AVAudioMixInputParameters`, each `AVAudioMixInputParameters` corresponds to an audio `AVCompositionTrack`. This is shown in the following illustration: 
 
 <img src="./Resource/VideoLab-AVAudioMix.png" width="500">
 
-`AVAudioMixInputParameters` 包含一个 `MTAudioProcessingTap`，你可以使用它来实时处理音频。当然，对于线性音量变化可以直接使用音量斜率接口 `setVolumeRampFromStartVolume:toEndVolume:timeRange:`
+`AVAudioMixInputParameters` contains an `MTAudioProcessingTap` that you can use to process audio in real time. Of course, for linear volume changes you can directly use the volume ramp interface `setVolumeRampFromStartVolume:toEndVolume:timeRange:`
 
-此外，`AVAudioMixInputParameters` 还包含一个 `AVAudioTimePitchAlgorithm`，你可以使用它来设置音高。
+In addition, `AVAudioMixInputParameters` also contains an `AVAudioTimePitchAlgorithm` that you can use to set the pitch.
 
-## 框架的设计
+## Design of the framework
 
-前面我们介绍了 AVFoundation 视频剪辑流程，接下来我们介绍下 VideoLab 框架的设计。
+We introduced the AVFoundation video editing process before, and now we will introduce the design of the VideoLab framework.
 
-先简要介绍下 AE(Adobe After Effect)，AE 是特效设计师常用的动态图形和视觉效果软件（更多介绍参见[AE官网](https://www.adobe.com/cn/products/aftereffects.html)）。AE 通过”层“控制视频、音频及静态图片的合成，每个媒体（视频、音频及静态图片）对象都有自己独立的轨道。
+First, let's briefly introduce AE (Adobe After Effect), a motion graphics and visual effects software commonly used by special effects designers (see the [AE website](https://www.adobe.com/cn/products/aftereffects.html) for more information). AE controls the compositing of video, audio, and still images through "layers", and each media (video, audio, and still image) object has its own separate track.
 
-下图是在 AE 中合成两个视频的示例。
+The following illustration is an example of compositing two videos in AE.
 
 <img src="./Resource/After-Effects.jpg" width="700">
 
-我们来分解下这张示例图：
+Let's break down this illustration: 
 
-* 在 Project 区域内，有名为 Comp1 类型为 Composition 的一个合成。在 AE 中合成可以认为是一个作品，可以播放导出一个视频。一个合成可以设置宽高值、帧率、背景色等参数。
-* 在 Timeline Control 区域内，包含了两个图层，源分别为 video1.MOV 与 video2.MOV。我们可以自由的设置图层参数，如 Transform（示例还针对 Scale 做了关键帧动画），Audio，也可以在右边区域自由的移动图层的时间区间。此外，我们可以给每个图层添加一组特效。
+* Within the Project area, there is a composition named Comp1 of type Composition. A composition can be considered a creation in AE and can be played back and exported as a video. A composition can set parameters such as resolution, frame rate, background color, etc.
+* Within the Timeline Control area, there are two layers with sources video1.MOV and video2.MOV. We can freely set the layer parameters, such as Transform (the example also has keyframe animation for Scale), Audio, and also freely move the layer in the right area. In addition, we can add a set of effects to each layer.
 
 基于对 AE 的分析，我们可以设计相似的描述方式：
 
