@@ -12,7 +12,7 @@ class LayerCompositor {
     let passthrough = Passthrough()
     let yuvToRGBConversion = YUVToRGBConversion()
     let blendOperation = BlendOperation()
-
+	let fxaaOperation = FXAAOperation()
     // MARK: - Public
     func renderPixelBuffer(_ pixelBuffer: CVPixelBuffer, for request: AVAsynchronousVideoCompositionRequest) {
         guard let instruction = request.videoCompositionInstruction as? VideoCompositionInstruction else {
@@ -33,6 +33,17 @@ class LayerCompositor {
                 renderLayer(videoRenderLayer, outputTexture: outputTexture, enableOutputTextureRead: enableOutputTextureRead, for: request)
             }
         }
+		autoreleasepool {
+			guard let clonedSourceTexture = cloneTexture(from: outputTexture) else {
+				return
+			}
+	//		fxaaOperation.frameBufSize = float2(Float(outputTexture.width), Float(outputTexture.height))
+
+			fxaaOperation.enableOutputTextureRead = false
+			fxaaOperation.addTexture(clonedSourceTexture, at: 0)
+			fxaaOperation.renderTexture(outputTexture)
+		}
+
     }
     
     // MARK: - Private

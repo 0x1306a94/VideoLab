@@ -7,339 +7,368 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		074CEE63C9578A0193FF6D30481BC322 /* VideoRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613702206BA8BA9ABEDBABEBED754C88 /* VideoRenderLayerGroup.swift */; };
-		0B97C77ECD9D8680AE948B235D29DDEA /* OperationShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B01F60807C0955D79478D6B89897474B /* OperationShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C6AA39EAA31E716A35696D6F57F8891 /* YUVToRGBConversion.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4070855EC087346ED78D5DB178972B10 /* YUVToRGBConversion.metal */; };
-		1C6F8C4C13E6B56D8B59638165F480F0 /* ChromaKeying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363985290BC3409CDB075D1B49A72DD /* ChromaKeying.swift */; };
-		1DBE65D591607A8B66D35F5FFBB1460D /* Passthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E70C2AF22784AAB3E9D6D3AC04F4E /* Passthrough.swift */; };
-		1F1792F9829DAB806B2AF2CEBE7F2AA8 /* Pods-VideoLab_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */; };
-		23273E8025A591D8BBE4B81426F2DB95 /* AVAssetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4812AC59510AAE6DE084DB57A7189A2 /* AVAssetSource.swift */; };
-		29356462A9DFE0469CF2FBF4640C484C /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18EBA1246692AB897C3347D94D9738 /* TimingFunction.swift */; };
-		2B40FC4D51C74E3F98ABE389EA436719 /* RenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084EA2B64CC3976CBC023751EA2C91A /* RenderLayerGroup.swift */; };
-		2B6D332897EDF1042007B53AF151881F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2DA4D68128ACCF3AC942E93E6E283D1D /* BrightnessAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0936C9C9CB805709F355717CEEF0 /* BrightnessAdjustment.swift */; };
-		2F2EC57A2930D79F4C42930E0A0D6DF8 /* ChromaKeying.metal in Sources */ = {isa = PBXBuildFile; fileRef = 511C6CBF4690D08D388AB80C5EC85F92 /* ChromaKeying.metal */; };
-		2FB5E2DC71E1045CCE7B5F71ABB970C3 /* LayerCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2BA86198C6490C1564E4245F4A91F /* LayerCompositor.swift */; };
-		32BB1FCA12DF0724180060E46DFF62BF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D8E67E03CCF5E34A0FB1005A165686 /* Position.swift */; };
-		395ED122BE8B47D5ACC15FCA1C78BFA1 /* ShaderUniformSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2130F1299A215CACAA3BAD6C2C13AD /* ShaderUniformSettings.swift */; };
-		45414D0A3630FA094619019327C038B5 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31840DC1A66491D60F73A7C01BB95C21 /* Transform.swift */; };
-		4D44D1ADEE845561FE05AEB743197BDD /* BrightnessAdjustment.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9A80CF07F50F28DB83CEFF043687ECDE /* BrightnessAdjustment.metal */; };
-		4E81707A70D47E98203FAFADDB82D9BD /* MetalRenderingDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EB1E1A190E64ABE0DB29E0312CA18A /* MetalRenderingDevice.swift */; };
-		4EC22247FEBF0C83344F808D5603E5B2 /* AudioRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF338E4B07A406E5F8414403135EECE /* AudioRenderLayerGroup.swift */; };
-		51F9952A00ECCC4090AA1FC427EA39FF /* Pods-VideoLab_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		559026D63970C3F5B2F4ECD21BB57ADC /* VideoLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A736810B08CDA19B2CCEE0961DFA20 /* VideoLab.swift */; };
-		56EF466572883EBBA788D369DE9252F3 /* VideoLab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB019FE7C6C69BD120D57893A32D183 /* VideoLab-dummy.m */; };
-		599490294E9E495E7B55515224A56E70 /* AudioConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD85B5D009B0C1542BF7DF509463336 /* AudioConfiguration.swift */; };
-		5A0154F0EE8D3402BD5617A6329E7CE6 /* TextureCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58B1BDFF5B5944D39EDBAFEEB6D3B3 /* TextureCache.swift */; };
-		5EED15BB0265CB0C16921595B25E8747 /* BlendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D98881E3AA6FD8C476F0AB0D419C99 /* BlendOperation.swift */; };
-		618A9C5123386CB67FA02D52A79614EB /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E42EF87C690489C4C4D71ADEB314C /* KeyframeAnimation.swift */; };
-		6261465511B640B3B342B0084462E8A0 /* BlendOperation.metal in Sources */ = {isa = PBXBuildFile; fileRef = DDB0EB2D33235F72D8D837E180BC6497 /* BlendOperation.metal */; };
-		63AEC0BA1B5FB53EAA41EF9D49E576CD /* LookupFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8E9FBF60F2E40A03648EDBD643CFFD /* LookupFilter.swift */; };
-		648CC81A67DD8AB10FD77F9DDCF824B3 /* Pods-VideoLab_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75BA5B1679C60CAEB5D3A7E5797A4E39 /* ZoomBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8217AFCB5F556A74EDA0B9AAE35D73BC /* ZoomBlur.metal */; };
-		80CCEBC7ADEA33EBC1D110B24C75A2AD /* AudioRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853A31E2660CA213FCD665A63E3DFD7 /* AudioRenderLayer.swift */; };
-		81882F0D4FDC70177CC99F6A5C0699D9 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C0ECFB4BF75AF6C3E314561E60A6EC /* BasicOperation.swift */; };
-		89A641AE5EC8DAA99D1421751FECB7B9 /* VideoLab.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4A2A7B66965808D791144869936840F /* VideoLab.bundle */; };
-		8EC08956C6DE1D575593DC642FAFC4DE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7A934C771E575E18FD948E163E07F /* Size.swift */; };
-		904CE69737E719112D27320040A30A87 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F8D153A9193069DB5B6622CADA529 /* Texture.swift */; };
-		90EF002BE4451BCA5200A51B4BCFB8E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		963B488845309DA7EA417FF07CCD1BFC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1155417BACA5278F6D66295002653 /* Color.swift */; };
-		9BDD23FE5C27111581D02C02451545C4 /* PHAssetVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6CB9C46E4F6F87E9326B4C7A28E98 /* PHAssetVideoSource.swift */; };
-		9CB68E4A75CFB21E8EE26B4E4F79B7E0 /* VideoLab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D80A70A15D6F7BE26DFBCAD83157D2 /* VideoLab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8DA27E656DB7DF393C137F4520556AB /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D66ADBFD03019A45F1307F654E28 /* MathLibrary.swift */; };
-		A9E9334A94255D06BA75B1986AA022D0 /* ZoomBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46206EC4EBB7A64D712011BDBAFB909F /* ZoomBlur.swift */; };
-		ABEB42B8B5437B20D2B8B2A5BC21B5BB /* BlendModeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E17792F73D4C119F7E5EDC998045F1B1 /* BlendModeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC52707D8C09D4A18C6B434EF9F51696 /* TextOpacityAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C2DA83969A3C41F0367FC70A0B1AB /* TextOpacityAnimationLayer.swift */; };
-		AC7E2F33EA15FFAD5D2ACAE2F9B2CA06 /* OperationConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D78EF0EE9EDCBC4D458D20C6F99B7FF7 /* OperationConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC898A4F2814FFE916EEBE432E8C07C0 /* VideoRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07BB79E33FED9099B92827B31FB44E9 /* VideoRenderLayer.swift */; };
-		ADD7B28B1DBFCA0D95378F31B7EE181A /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BF17E9754F322C9ED1D82DE95B4B5 /* VideoCompositor.swift */; };
-		B36FDC22CED54953CDCBAD205CD68F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B8E15D25DD6806DC4585EFD229DDCEE4 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA07B2E3CE6C535B7D9057E90CA517 /* ImageSource.swift */; };
-		BA79FEA092AA64C15D6E93C21E87FE44 /* RenderComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE036C491B59D90AA4AD3CF95A17BB2 /* RenderComposition.swift */; };
-		C4D6D2371B54B90F96F9B3565DB61E0C /* TextAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AF333B0ADC07A35D9B273EBCD83E2 /* TextAnimationLayer.swift */; };
-		C4EF5EF700D1B65676B7D48724136BE9 /* Passthrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 155BB109D17B69E103DB2422CBC43EF4 /* Passthrough.metal */; };
-		E30023C70C18EB4A18CA03F65040573D /* LookupFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 21BD82212C0F3867622A94054A0260F3 /* LookupFilter.metal */; };
-		E53B640CF8C444B562D7AF0CB196D1C3 /* RenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01DCDB95BEA829433210F3550710844 /* RenderLayer.swift */; };
-		E99D61B3A8C7D3475405C40359027282 /* VideoCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4DF20A2B208CB67E85901A68D7A2 /* VideoCompositionInstruction.swift */; };
-		ED53CAA312A27B86F3AFC1242DB27C5F /* YUVToRGBConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085813B9FE3BBD43D14C761E7B38E55D /* YUVToRGBConversion.swift */; };
-		F54A52049EDF932FDC3943CDA9B11EF7 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8CA867A10E4114F6BBF15B40F1CAD /* Source.swift */; };
-		F56BAB8B8CCE647F11C4C964FF32086D /* Pods-VideoLab_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */; };
-		F8E127494EA28FA52EAE3E1388EE7E25 /* PHAssetImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8EEE69534306EEC132DE1AA23865A /* PHAssetImageSource.swift */; };
-		F95388B15AF13CA8793C83837B629008 /* MetalRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9984EBFFD1FE35A5030D94583FE9DC /* MetalRendering.swift */; };
+		019045F21092770B161426A249C84517 /* AudioRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AD388778D2870F6D4DECE6DE6766B /* AudioRenderLayer.swift */; };
+		0C644AF2536D0AFD718DEB05F0628998 /* ZoomBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E3C410299599287FD377C91E755C42 /* ZoomBlur.swift */; };
+		0D3140D7CA1F7FA10AE0307F740E4809 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AA50C0273206A2E947CE084CAD26F /* Color.swift */; };
+		10448A7C798961E7BF8DF1A83D16B996 /* VideoLab.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F77B34AF25104661ABFA874BB75B925 /* VideoLab.bundle */; };
+		132F36ACE1AF23A11D23A91017738A9E /* ZoomBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3110BDBC34D297E773793FAAD5D846A /* ZoomBlur.metal */; };
+		171BBFD76B868B861E2C92AF64CF2065 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F838A30BF273D9D89E89389CC75FCC8 /* TimingFunction.swift */; };
+		1CBA93386516248BBF9929523E9EBED3 /* VideoLab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC5AFD23927027F8E39569C1DA32E11 /* VideoLab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207172E8FD113D3EDD0E247B2DD529F6 /* PHAssetVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C96A16FFA84F5860BC7185BFBA7A17 /* PHAssetVideoSource.swift */; };
+		2217C745BA2FA663EF3C1256D3C1C396 /* BrightnessAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB1D617BC0F38A29F0FC861598F5BB /* BrightnessAdjustment.swift */; };
+		23F75A6799C2DC1FD23E9541BCA3559F /* ChromaKeying.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4D55109D309D5C1D3ECF84617990B /* ChromaKeying.swift */; };
+		2FAECE5A969B23F78573CD2DE6B5C03B /* YUVToRGBConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9F6F94B9554A90CA638F0C950FFF4 /* YUVToRGBConversion.swift */; };
+		3CCC95B22692962800D97E78 /* FXAAOperation.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC95B12692962800D97E78 /* FXAAOperation.metal */; };
+		3CCC95B42692963000D97E78 /* FXAAOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC95B32692963000D97E78 /* FXAAOperation.swift */; };
+		3F756F91470C4176ABC7BA98E6E5FE22 /* VideoLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6511A4BFFD2CE88A258E8D79A82A16B /* VideoLab.swift */; };
+		4BE6580531CFEA24C0B6F89AA01C5271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4FE264176F97AF8C5F5C39123F578C09 /* BlendModeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5C87B7EA944AD41BF4EA9579C5D597 /* BlendModeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5172A76F87C6FF0FA03F58BE5706FB7B /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9824892E1D1446C3D18F0627824CAF /* Transform.swift */; };
+		56119D2F1F6D7024B2202C940F60B57B /* LookupFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = FDD54E15356717F3F1BA1A4203503988 /* LookupFilter.metal */; };
+		577E23AC33DEE5DDC9A1FB74C44E16CF /* LayerCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F4058A54A05528171A31C2724A2E6 /* LayerCompositor.swift */; };
+		5A48E87602B9AD4F476C1668D282D463 /* PHAssetImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0127C3B43101E927FFF43C826537627 /* PHAssetImageSource.swift */; };
+		64095DE05D76DF132C9C2FE3669BF89D /* OperationShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F195218B669CBF60763A93C6D6565A16 /* OperationShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691769A59A56AE8B7F808563DC5EC7BB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5432315C2E903B9501A6AEE0F1B87C /* Source.swift */; };
+		6D263BF55E317436B20AD9A72BD45546 /* LookupFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB9E959CF1E06938E1217988D641F /* LookupFilter.swift */; };
+		6DC928D8CEAE67C52C59740596434355 /* VideoLab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2DC13A44983CCF3BAC82B84FEA98F /* VideoLab-dummy.m */; };
+		70B8F59C3A5B3A671A92301A846502F8 /* OperationConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D32CEEA9C134D00369CE564B849D5DF /* OperationConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73C3AC08D843862E07797E6061F85626 /* YUVToRGBConversion.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C3B5110774B61A38C52F9F70465A7 /* YUVToRGBConversion.metal */; };
+		7A2AFB464AABA1A4DA57C2BE4CEA5425 /* BlendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9867CAC260A450FA8745BE05F8D59435 /* BlendOperation.swift */; };
+		7E2EBE444BA6C92D82C04CA959091219 /* Passthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC0E54E757F9FD85265C712AF96B4C /* Passthrough.swift */; };
+		7EE5EBE2F70888314FC654F951519479 /* Pods-VideoLab_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4138E2AD4B16082E53B9FD207BFB39F2 /* Pods-VideoLab_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806F5D6CAB6D0BF9D8D3B4BD8277E9CF /* AudioConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E511732954D1603DB1B26621E80E84C7 /* AudioConfiguration.swift */; };
+		80B7AE5926553D4609CFFE19AE745975 /* Pods-VideoLab_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DD42D8BE15D4F4487BD8A945F45029 /* Pods-VideoLab_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81A4B4AE5CAE4D99498B25673E5C2143 /* AudioRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607D18D02CA7EA9487A680A77C623A0 /* AudioRenderLayerGroup.swift */; };
+		8295CE0898A0EDA00BAFC9746889576B /* ChromaKeying.metal in Sources */ = {isa = PBXBuildFile; fileRef = 74EAA3D8DDD289664009B6BC22A4BE22 /* ChromaKeying.metal */; };
+		86D2CDA7E98B0A839C7CB674D4810276 /* Pods-VideoLab_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9879862FFCA5269A679A3BF6174E1AFD /* Pods-VideoLab_Example-dummy.m */; };
+		88C736E9991259DA7B786BA8D9BDE983 /* MetalRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83173415263B6BF6AA7D201BCBA22C4B /* MetalRendering.swift */; };
+		8AB1E966645F34E8FA71FB50DD5CB13A /* BrightnessAdjustment.metal in Sources */ = {isa = PBXBuildFile; fileRef = FACC6536B26065ADE183E2D3C10C43C5 /* BrightnessAdjustment.metal */; };
+		8FE90357FD0CDAC3FDC392DC9F475DFE /* MetalRenderingDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84468F22277E724AF69A60BBED9B4812 /* MetalRenderingDevice.swift */; };
+		901A380667E5BD8FE8A1986834D78FCF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41D91E7334090CF02FC5AC06AFF2D7 /* Position.swift */; };
+		90F314301CFE47E2227CA39E09099314 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9CD289F23FED12F61529BE76C9F79C /* ImageSource.swift */; };
+		97138B762E6BEC4D124B49B9D5126B93 /* RenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8031FB9A27499C3E5D4358D68470E1 /* RenderLayerGroup.swift */; };
+		9F636A920B96FA457C3DCE194E39F995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A360B25FF36FAFCBB3388ED3FE8F8B9B /* VideoCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6451991EBC0B77AC94C59EEFE09D8B0 /* VideoCompositionInstruction.swift */; };
+		A7A37B3E3124814DB63388E6B448FB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AC6B650CA9804D057FCC6B942421EB7A /* Passthrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA320EBF633A7D5CFDC9828EF7DC7A8E /* Passthrough.metal */; };
+		B7415857548FF342D71C7DE68A90B761 /* BlendOperation.metal in Sources */ = {isa = PBXBuildFile; fileRef = D9FDE8510E9C14D1D8616F27EF2C2973 /* BlendOperation.metal */; };
+		B94DD60C8EDE7C3B9DD583E931FEC41A /* Pods-VideoLab_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 053231D7A5936D21A788FC9287535A5F /* Pods-VideoLab_Tests-dummy.m */; };
+		BAD9C94CC928371032C026B7504E0718 /* RenderComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E1231D13A405D9239C9B9F24DA4F /* RenderComposition.swift */; };
+		C56C8A4FCFF6C9F9356F37A14CD09309 /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE40AA8094844F2D0427B2F6FC6469 /* VideoCompositor.swift */; };
+		CBD62896ABA3141F0C6A289EDDA1F9CD /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1820B3F861599922575E4D7353C2B35 /* KeyframeAnimation.swift */; };
+		CDD3F69E1EFFAD257403800887A67A54 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF776EF7B520BCC9D1E22157E4EF10E /* Texture.swift */; };
+		CEB358EC7F15401AE0C6703304BB86A4 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04108379B9D20450C1C1554271FBDFA9 /* BasicOperation.swift */; };
+		D7F85B7BD5ECDFC734FDE175C0C84D05 /* VideoRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333ABCEF2B6E8E0A4E65E7AFFC3A0DB /* VideoRenderLayer.swift */; };
+		D916904CD78E48E2670788A3BF6F6CD1 /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D2EF121AF202B317564A736B347CE /* MathLibrary.swift */; };
+		DD99CCB1DA8F4F531DBFE74F06BAB2E7 /* TextureCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFEFFCE041C9D666BE780C21537FD2 /* TextureCache.swift */; };
+		E35FD552C0E137C54FE4F9764BE2FB16 /* VideoRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E87BFD00C6D9E5FAB59F6F65635D17 /* VideoRenderLayerGroup.swift */; };
+		E96C3E91F942066D1D0C1595C5EA4A8E /* ShaderUniformSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B38E36D27D1F7ADDB384C4D0156F5 /* ShaderUniformSettings.swift */; };
+		EAA4A5BDEDD6F188DB65F4E09B902CCD /* TextOpacityAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1FD08737653AE10F70A21929B6557 /* TextOpacityAnimationLayer.swift */; };
+		EAC0ED27EA84D4385AE50444DD6DF0D2 /* RenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E0DC98A0402B1E6203947EB751105 /* RenderLayer.swift */; };
+		F04AC2F0F475311D2E3922BAFA3637B1 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBFD00EFAAB1BCDD0D22DBE8B6F4026 /* Size.swift */; };
+		F51A30D6599F8BBA20A8287011341838 /* TextAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCFC6CFAD10433CADC87D82CD37D7AE /* TextAnimationLayer.swift */; };
+		FF816A330221B20A1EB6E7C42F8D4C60 /* AVAssetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EAB293DAA254131782B3AF17FAE057 /* AVAssetSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B176E54545F526EC45B925CA4369111 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 90CEAAB26B5599871DFF2C5EEDC63120;
-			remoteInfo = VideoLab;
-		};
-		99FA461DBB6EF0FAA970AF80C0A43464 /* PBXContainerItemProxy */ = {
+		64536EFC1945CC622631FFCFADE9B681 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A788278E713EEC517380E3C6AA693DB9;
 			remoteInfo = "Pods-VideoLab_Example";
 		};
+		EE70229F53F06B7E07C940C282D39E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90CEAAB26B5599871DFF2C5EEDC63120;
+			remoteInfo = VideoLab;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		085813B9FE3BBD43D14C761E7B38E55D /* YUVToRGBConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YUVToRGBConversion.swift; sourceTree = "<group>"; };
-		14416CEA0E098543961E6A24250C7687 /* Pods-VideoLab_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Example.modulemap"; sourceTree = "<group>"; };
-		155BB109D17B69E103DB2422CBC43EF4 /* Passthrough.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = Passthrough.metal; sourceTree = "<group>"; };
-		15C96A63BBFD5E689C25EDE8883793C8 /* Pods-VideoLab_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		178C358EE51F83DB076DDCA05D026F63 /* VideoLab-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoLab-prefix.pch"; sourceTree = "<group>"; };
-		188E42EF87C690489C4C4D71ADEB314C /* KeyframeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeAnimation.swift; path = VideoLab/KeyframeAnimation.swift; sourceTree = "<group>"; };
-		21BD82212C0F3867622A94054A0260F3 /* LookupFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = LookupFilter.metal; sourceTree = "<group>"; };
-		2AE036C491B59D90AA4AD3CF95A17BB2 /* RenderComposition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderComposition.swift; path = VideoLab/RenderComposition.swift; sourceTree = "<group>"; };
-		31840DC1A66491D60F73A7C01BB95C21 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = VideoLab/Transform.swift; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		04108379B9D20450C1C1554271FBDFA9 /* BasicOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		053231D7A5936D21A788FC9287535A5F /* Pods-VideoLab_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Tests-dummy.m"; sourceTree = "<group>"; };
+		0642BD718AE4BDCF67B9F17414DBD2C7 /* VideoLab-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VideoLab-Info.plist"; sourceTree = "<group>"; };
+		0F77B34AF25104661ABFA874BB75B925 /* VideoLab.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = VideoLab.bundle; path = VideoLab/VideoLab.bundle; sourceTree = "<group>"; };
+		0F7E0DC98A0402B1E6203947EB751105 /* RenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderLayer.swift; path = VideoLab/RenderLayer.swift; sourceTree = "<group>"; };
+		0F838A30BF273D9D89E89389CC75FCC8 /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunction.swift; path = VideoLab/TimingFunction.swift; sourceTree = "<group>"; };
+		175EB9E959CF1E06938E1217988D641F /* LookupFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
+		1BD0C955C5A42FC86F60A3E521043780 /* Pods-VideoLab_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28DD42D8BE15D4F4487BD8A945F45029 /* Pods-VideoLab_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Tests-umbrella.h"; sourceTree = "<group>"; };
+		30E87BFD00C6D9E5FAB59F6F65635D17 /* VideoRenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoRenderLayerGroup.swift; sourceTree = "<group>"; };
 		374E9D9ED181931B96AA13E41366BA94 /* Pods_VideoLab_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		374F8D153A9193069DB5B6622CADA529 /* Texture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
-		3C2C4DF20A2B208CB67E85901A68D7A2 /* VideoCompositionInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCompositionInstruction.swift; sourceTree = "<group>"; };
-		4070855EC087346ED78D5DB178972B10 /* YUVToRGBConversion.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = YUVToRGBConversion.metal; sourceTree = "<group>"; };
-		45A7A934C771E575E18FD948E163E07F /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		46206EC4EBB7A64D712011BDBAFB909F /* ZoomBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
-		47D98881E3AA6FD8C476F0AB0D419C99 /* BlendOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlendOperation.swift; sourceTree = "<group>"; };
+		377E666E95F3056CACFF534C0ED9DD91 /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		38392FAB044D2F86336E8AA7117B2B8D /* Pods-VideoLab_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-Info.plist"; sourceTree = "<group>"; };
+		3CCC95B12692962800D97E78 /* FXAAOperation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FXAAOperation.metal; sourceTree = "<group>"; };
+		3CCC95B32692963000D97E78 /* FXAAOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXAAOperation.swift; sourceTree = "<group>"; };
+		3D32CEEA9C134D00369CE564B849D5DF /* OperationConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OperationConstants.h; sourceTree = "<group>"; };
+		3D5432315C2E903B9501A6AEE0F1B87C /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		3F71E1231D13A405D9239C9B9F24DA4F /* RenderComposition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderComposition.swift; path = VideoLab/RenderComposition.swift; sourceTree = "<group>"; };
+		4138E2AD4B16082E53B9FD207BFB39F2 /* Pods-VideoLab_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Example-umbrella.h"; sourceTree = "<group>"; };
+		438B53F26BBD1307FF303C01868B8D44 /* Pods-VideoLab_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Example.modulemap"; sourceTree = "<group>"; };
 		485DF978C439EA0C1CCBDCC540823586 /* Pods_VideoLab_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoLab_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BC8EEE69534306EEC132DE1AA23865A /* PHAssetImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetImageSource.swift; sourceTree = "<group>"; };
-		511C6CBF4690D08D388AB80C5EC85F92 /* ChromaKeying.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = ChromaKeying.metal; sourceTree = "<group>"; };
-		53A736810B08CDA19B2CCEE0961DFA20 /* VideoLab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoLab.swift; path = VideoLab/VideoLab.swift; sourceTree = "<group>"; };
-		547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Example-dummy.m"; sourceTree = "<group>"; };
-		5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5562BF50D43174C8362485CF45114629 /* VideoLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoLab.release.xcconfig; sourceTree = "<group>"; };
-		566DD7435C2561045B02D4585829896B /* Pods-VideoLab_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-Info.plist"; sourceTree = "<group>"; };
-		5BB019FE7C6C69BD120D57893A32D183 /* VideoLab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VideoLab-dummy.m"; sourceTree = "<group>"; };
-		5BF2BA86198C6490C1564E4245F4A91F /* LayerCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerCompositor.swift; sourceTree = "<group>"; };
-		5F5F2927AEABAEBDC0E9E8D3FC9372FA /* Pods-VideoLab_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-Info.plist"; sourceTree = "<group>"; };
-		613702206BA8BA9ABEDBABEBED754C88 /* VideoRenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoRenderLayerGroup.swift; sourceTree = "<group>"; };
-		64CA07B2E3CE6C535B7D9057E90CA517 /* ImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
-		66D80A70A15D6F7BE26DFBCAD83157D2 /* VideoLab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoLab-umbrella.h"; sourceTree = "<group>"; };
-		68552E977767CE9B9225A3FA2D93D5BB /* VideoLab-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VideoLab-Info.plist"; sourceTree = "<group>"; };
-		6AE6CB9C46E4F6F87E9326B4C7A28E98 /* PHAssetVideoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetVideoSource.swift; sourceTree = "<group>"; };
-		6B9AF333B0ADC07A35D9B273EBCD83E2 /* TextAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextAnimationLayer.swift; sourceTree = "<group>"; };
-		7324476B2A58E28BFC06D016769F7182 /* VideoLab.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = VideoLab.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		746A2D50E480925B6E7FC4D079B0A3D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		754E70C2AF22784AAB3E9D6D3AC04F4E /* Passthrough.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Passthrough.swift; sourceTree = "<group>"; };
-		756BF17E9754F322C9ED1D82DE95B4B5 /* VideoCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
-		8217AFCB5F556A74EDA0B9AAE35D73BC /* ZoomBlur.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = ZoomBlur.metal; sourceTree = "<group>"; };
-		8363985290BC3409CDB075D1B49A72DD /* ChromaKeying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChromaKeying.swift; sourceTree = "<group>"; };
-		873ED94228A7F2D0FA6CFC47983FDDDB /* Pods-VideoLab_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8B58B1BDFF5B5944D39EDBAFEEB6D3B3 /* TextureCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextureCache.swift; sourceTree = "<group>"; };
-		8E799945F84B4D88B1C2BD959CBA65F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8FF89E04D31908555CA8534259A4AD52 /* Pods-VideoLab_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Tests.modulemap"; sourceTree = "<group>"; };
-		98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9A80CF07F50F28DB83CEFF043687ECDE /* BrightnessAdjustment.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = BrightnessAdjustment.metal; sourceTree = "<group>"; };
-		9AA8CA867A10E4114F6BBF15B40F1CAD /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		4D4C3B5110774B61A38C52F9F70465A7 /* YUVToRGBConversion.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = YUVToRGBConversion.metal; sourceTree = "<group>"; };
+		55B9252D06653F3718FF451FAB6D9D23 /* Pods-VideoLab_Example.debug2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.debug2.xcconfig"; sourceTree = "<group>"; };
+		5AC5AFD23927027F8E39569C1DA32E11 /* VideoLab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoLab-umbrella.h"; sourceTree = "<group>"; };
+		5DBFD00EFAAB1BCDD0D22DBE8B6F4026 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		612C8CE233408BF3C392070A431C23D1 /* VideoLab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VideoLab.modulemap; sourceTree = "<group>"; };
+		6333ABCEF2B6E8E0A4E65E7AFFC3A0DB /* VideoRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoRenderLayer.swift; sourceTree = "<group>"; };
+		6ED1FD08737653AE10F70A21929B6557 /* TextOpacityAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextOpacityAnimationLayer.swift; sourceTree = "<group>"; };
+		6F9824892E1D1446C3D18F0627824CAF /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = VideoLab/Transform.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74EAA3D8DDD289664009B6BC22A4BE22 /* ChromaKeying.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = ChromaKeying.metal; sourceTree = "<group>"; };
+		77816F8E7CD49B5E52CD4DEFA26C4784 /* VideoLab-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoLab-prefix.pch"; sourceTree = "<group>"; };
+		7B3AD388778D2870F6D4DECE6DE6766B /* AudioRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioRenderLayer.swift; sourceTree = "<group>"; };
+		822C9D6968266F59B70DC1C04FB355B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83173415263B6BF6AA7D201BCBA22C4B /* MetalRendering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalRendering.swift; sourceTree = "<group>"; };
+		84468F22277E724AF69A60BBED9B4812 /* MetalRenderingDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalRenderingDevice.swift; sourceTree = "<group>"; };
+		8826F913E5674049A611F82E1AC41BFF /* Pods-VideoLab_Tests.debug2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.debug2.xcconfig"; sourceTree = "<group>"; };
+		884501B1C56276D51A6A99F2B2BEA694 /* Pods-VideoLab_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C5C87B7EA944AD41BF4EA9579C5D597 /* BlendModeConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BlendModeConstants.h; sourceTree = "<group>"; };
+		8EF776EF7B520BCC9D1E22157E4EF10E /* Texture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		8FCFC6CFAD10433CADC87D82CD37D7AE /* TextAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextAnimationLayer.swift; sourceTree = "<group>"; };
+		9867CAC260A450FA8745BE05F8D59435 /* BlendOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlendOperation.swift; sourceTree = "<group>"; };
+		9879862FFCA5269A679A3BF6174E1AFD /* Pods-VideoLab_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Example-dummy.m"; sourceTree = "<group>"; };
+		988F14B183BB3DB56CC47F79A210FD57 /* README-CN.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = "README-CN.md"; sourceTree = "<group>"; };
+		998B63CDDCF5380368B514C962559B1E /* VideoLab.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = VideoLab.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ACC0E54E757F9FD85265C712AF96B4C /* Passthrough.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Passthrough.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1D1155417BACA5278F6D66295002653 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A1EB1E1A190E64ABE0DB29E0312CA18A /* MetalRenderingDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalRenderingDevice.swift; sourceTree = "<group>"; };
-		A4006845EC16763C8CD1B91FCF94BF5C /* Pods-VideoLab_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Example-umbrella.h"; sourceTree = "<group>"; };
-		A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AD18EBA1246692AB897C3347D94D9738 /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunction.swift; path = VideoLab/TimingFunction.swift; sourceTree = "<group>"; };
-		AFF338E4B07A406E5F8414403135EECE /* AudioRenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioRenderLayerGroup.swift; sourceTree = "<group>"; };
-		B01DCDB95BEA829433210F3550710844 /* RenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderLayer.swift; path = VideoLab/RenderLayer.swift; sourceTree = "<group>"; };
-		B01F60807C0955D79478D6B89897474B /* OperationShaderTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OperationShaderTypes.h; sourceTree = "<group>"; };
-		B0BBBCBF9ED5B8A0DCFBD292244ACD45 /* VideoLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoLab.debug.xcconfig; sourceTree = "<group>"; };
-		B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB8E9FBF60F2E40A03648EDBD643CFFD /* LookupFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
-		C5C0ECFB4BF75AF6C3E314561E60A6EC /* BasicOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
-		CC3424A32DB9D6FB35271F03EA19470D /* VideoLab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VideoLab.modulemap; sourceTree = "<group>"; };
-		D084EA2B64CC3976CBC023751EA2C91A /* RenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderLayerGroup.swift; path = VideoLab/RenderLayerGroup.swift; sourceTree = "<group>"; };
-		D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Tests-dummy.m"; sourceTree = "<group>"; };
-		D4A2A7B66965808D791144869936840F /* VideoLab.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = VideoLab.bundle; path = VideoLab/VideoLab.bundle; sourceTree = "<group>"; };
-		D78EF0EE9EDCBC4D458D20C6F99B7FF7 /* OperationConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OperationConstants.h; sourceTree = "<group>"; };
-		D8D8E67E03CCF5E34A0FB1005A165686 /* Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		DDB0EB2D33235F72D8D837E180BC6497 /* BlendOperation.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = BlendOperation.metal; sourceTree = "<group>"; };
-		DE2130F1299A215CACAA3BAD6C2C13AD /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
-		DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DE9984EBFFD1FE35A5030D94583FE9DC /* MetalRendering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalRendering.swift; sourceTree = "<group>"; };
-		E17792F73D4C119F7E5EDC998045F1B1 /* BlendModeConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BlendModeConstants.h; sourceTree = "<group>"; };
-		E4812AC59510AAE6DE084DB57A7189A2 /* AVAssetSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AVAssetSource.swift; sourceTree = "<group>"; };
-		EA2C2DA83969A3C41F0367FC70A0B1AB /* TextOpacityAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextOpacityAnimationLayer.swift; sourceTree = "<group>"; };
-		EAD85B5D009B0C1542BF7DF509463336 /* AudioConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioConfiguration.swift; path = VideoLab/AudioConfiguration.swift; sourceTree = "<group>"; };
-		F07BB79E33FED9099B92827B31FB44E9 /* VideoRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoRenderLayer.swift; sourceTree = "<group>"; };
-		F853A31E2660CA213FCD665A63E3DFD7 /* AudioRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioRenderLayer.swift; sourceTree = "<group>"; };
-		FA521E2B4F116EE69D9F56ECE673ED9E /* Pods-VideoLab_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FBD59F7E97631FD18CD03EB58B12151A /* Pods-VideoLab_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoLab_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9F8031FB9A27499C3E5D4358D68470E1 /* RenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderLayerGroup.swift; path = VideoLab/RenderLayerGroup.swift; sourceTree = "<group>"; };
+		A3E3C410299599287FD377C91E755C42 /* ZoomBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
+		AB56A5060F8E4087A96FD779E1A286AA /* Pods-VideoLab_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC29A329BFEB41F99246E92C2243D38C /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC9CD289F23FED12F61529BE76C9F79C /* ImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		ADAB1D617BC0F38A29F0FC861598F5BB /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
+		B0127C3B43101E927FFF43C826537627 /* PHAssetImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetImageSource.swift; sourceTree = "<group>"; };
+		B1EAB293DAA254131782B3AF17FAE057 /* AVAssetSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AVAssetSource.swift; sourceTree = "<group>"; };
+		B2BFEFFCE041C9D666BE780C21537FD2 /* TextureCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextureCache.swift; sourceTree = "<group>"; };
+		B46796B8AAA3CFD00ED79A8D5C59A865 /* VideoLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoLab.release.xcconfig; sourceTree = "<group>"; };
+		B6451991EBC0B77AC94C59EEFE09D8B0 /* VideoCompositionInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCompositionInstruction.swift; sourceTree = "<group>"; };
+		BAE2DC13A44983CCF3BAC82B84FEA98F /* VideoLab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VideoLab-dummy.m"; sourceTree = "<group>"; };
+		BB3F4058A54A05528171A31C2724A2E6 /* LayerCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerCompositor.swift; sourceTree = "<group>"; };
+		BC955123CB2D86735D3B259EEBE9F281 /* VideoLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoLab.debug.xcconfig; sourceTree = "<group>"; };
+		C66172A71C92B9F7C91F15A28B850633 /* Pods-VideoLab_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Tests.modulemap"; sourceTree = "<group>"; };
+		CB62531A9FCE298CE07BECAB20FA7B09 /* Pods-VideoLab_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoLab_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D1820B3F861599922575E4D7353C2B35 /* KeyframeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeAnimation.swift; path = VideoLab/KeyframeAnimation.swift; sourceTree = "<group>"; };
+		D6511A4BFFD2CE88A258E8D79A82A16B /* VideoLab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoLab.swift; path = VideoLab/VideoLab.swift; sourceTree = "<group>"; };
+		D9FDE8510E9C14D1D8616F27EF2C2973 /* BlendOperation.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = BlendOperation.metal; sourceTree = "<group>"; };
+		DA032598600D516265DEBD75347960F5 /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E29B38E36D27D1F7ADDB384C4D0156F5 /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
+		E3110BDBC34D297E773793FAAD5D846A /* ZoomBlur.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = ZoomBlur.metal; sourceTree = "<group>"; };
+		E511732954D1603DB1B26621E80E84C7 /* AudioConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioConfiguration.swift; path = VideoLab/AudioConfiguration.swift; sourceTree = "<group>"; };
+		E64CBE33E077AA6072634B4945691020 /* Pods-VideoLab_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-Info.plist"; sourceTree = "<group>"; };
+		E8FAB934ABF4E697508EEC5C9639F191 /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C9F6F94B9554A90CA638F0C950FFF4 /* YUVToRGBConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YUVToRGBConversion.swift; sourceTree = "<group>"; };
+		EAD4D55109D309D5C1D3ECF84617990B /* ChromaKeying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChromaKeying.swift; sourceTree = "<group>"; };
+		F195218B669CBF60763A93C6D6565A16 /* OperationShaderTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OperationShaderTypes.h; sourceTree = "<group>"; };
+		F34AA50C0273206A2E947CE084CAD26F /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F607D18D02CA7EA9487A680A77C623A0 /* AudioRenderLayerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioRenderLayerGroup.swift; sourceTree = "<group>"; };
+		F8C96A16FFA84F5860BC7185BFBA7A17 /* PHAssetVideoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetVideoSource.swift; sourceTree = "<group>"; };
+		F9246B002CF42AF122879F73BE59F01D /* Pods-VideoLab_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA320EBF633A7D5CFDC9828EF7DC7A8E /* Passthrough.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = Passthrough.metal; sourceTree = "<group>"; };
+		FACC6536B26065ADE183E2D3C10C43C5 /* BrightnessAdjustment.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = BrightnessAdjustment.metal; sourceTree = "<group>"; };
+		FB41D91E7334090CF02FC5AC06AFF2D7 /* Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		FCAE40AA8094844F2D0427B2F6FC6469 /* VideoCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
 		FD9A4C5159599785D079DEEC40FA78DA /* VideoLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE8B0936C9C9CB805709F355717CEEF0 /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
-		FFF9D66ADBFD03019A45F1307F654E28 /* MathLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		FDD54E15356717F3F1BA1A4203503988 /* LookupFilter.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = LookupFilter.metal; sourceTree = "<group>"; };
+		FF9D2EF121AF202B317564A736B347CE /* MathLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25F4C00EB20E299BA1ACB056C5528CF4 /* Frameworks */ = {
+		4030671C3375B92EDBB1AFB2C9A2703D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36FDC22CED54953CDCBAD205CD68F56 /* Foundation.framework in Frameworks */,
+				A7A37B3E3124814DB63388E6B448FB11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD875B2B10362988CEEE6B9EFB7EE6ED /* Frameworks */ = {
+		4D619537132449C88311DBF079711BB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90EF002BE4451BCA5200A51B4BCFB8E4 /* Foundation.framework in Frameworks */,
+				9F636A920B96FA457C3DCE194E39F995 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE0248C0AD8A17929AE4FB4ECE17CAD9 /* Frameworks */ = {
+		839D2CD4A44C4D059FF2FEE856982025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6D332897EDF1042007B53AF151881F /* Foundation.framework in Frameworks */,
+				4BE6580531CFEA24C0B6F89AA01C5271 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03F93F15F81D8E69D68E7D513118F3B7 /* Base */ = {
+		131482B97388B4CB97382D03543BBC18 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A1D1155417BACA5278F6D66295002653 /* Color.swift */,
-				FFF9D66ADBFD03019A45F1307F654E28 /* MathLibrary.swift */,
-				DE9984EBFFD1FE35A5030D94583FE9DC /* MetalRendering.swift */,
-				A1EB1E1A190E64ABE0DB29E0312CA18A /* MetalRenderingDevice.swift */,
-				D8D8E67E03CCF5E34A0FB1005A165686 /* Position.swift */,
-				DE2130F1299A215CACAA3BAD6C2C13AD /* ShaderUniformSettings.swift */,
-				45A7A934C771E575E18FD948E163E07F /* Size.swift */,
-				374F8D153A9193069DB5B6622CADA529 /* Texture.swift */,
-				8B58B1BDFF5B5944D39EDBAFEEB6D3B3 /* TextureCache.swift */,
+				822C9D6968266F59B70DC1C04FB355B2 /* LICENSE */,
+				988F14B183BB3DB56CC47F79A210FD57 /* README-CN.md */,
+				998B63CDDCF5380368B514C962559B1E /* VideoLab.podspec */,
 			);
-			path = Base;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		12210FD95D5C92B38BEFEDAEB91DAA6A /* Support Files */ = {
+		261BE94ABFD347A4176F4021749B2097 /* Render */ = {
 			isa = PBXGroup;
 			children = (
-				CC3424A32DB9D6FB35271F03EA19470D /* VideoLab.modulemap */,
-				5BB019FE7C6C69BD120D57893A32D183 /* VideoLab-dummy.m */,
-				68552E977767CE9B9225A3FA2D93D5BB /* VideoLab-Info.plist */,
-				178C358EE51F83DB076DDCA05D026F63 /* VideoLab-prefix.pch */,
-				66D80A70A15D6F7BE26DFBCAD83157D2 /* VideoLab-umbrella.h */,
-				B0BBBCBF9ED5B8A0DCFBD292244ACD45 /* VideoLab.debug.xcconfig */,
-				5562BF50D43174C8362485CF45114629 /* VideoLab.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/VideoLab";
-			sourceTree = "<group>";
-		};
-		42288C6BC75A29E1B9CA047CCA31B04A /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				9AA8CA867A10E4114F6BBF15B40F1CAD /* Source.swift */,
-				E4812AC59510AAE6DE084DB57A7189A2 /* AVAssetSource.swift */,
-				64CA07B2E3CE6C535B7D9057E90CA517 /* ImageSource.swift */,
-				6AE6CB9C46E4F6F87E9326B4C7A28E98 /* PHAssetVideoSource.swift */,
-				4BC8EEE69534306EEC132DE1AA23865A /* PHAssetImageSource.swift */,
-			);
-			name = Source;
-			path = VideoLab/Source;
-			sourceTree = "<group>";
-		};
-		4D7097D106BBEBCD8BF5954A185A2B5F /* Render */ = {
-			isa = PBXGroup;
-			children = (
-				03F93F15F81D8E69D68E7D513118F3B7 /* Base */,
-				7442E3C61D05C764D6B5DEAE6B513B70 /* Operations */,
+				F8F134FF3F663707E80F2DDD5C5E27A9 /* Base */,
+				8F79E51B7212550DC00E6CEB301DBCEC /* Operations */,
 			);
 			name = Render;
 			path = VideoLab/Render;
 			sourceTree = "<group>";
 		};
-		50361809E50852DB94874E467B1FF5B7 /* Text */ = {
+		26F9F9D039D7622C8B6C3D17B2AEE28B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6B9AF333B0ADC07A35D9B273EBCD83E2 /* TextAnimationLayer.swift */,
-				EA2C2DA83969A3C41F0367FC70A0B1AB /* TextOpacityAnimationLayer.swift */,
+				B1EAB293DAA254131782B3AF17FAE057 /* AVAssetSource.swift */,
+				AC9CD289F23FED12F61529BE76C9F79C /* ImageSource.swift */,
+				B0127C3B43101E927FFF43C826537627 /* PHAssetImageSource.swift */,
+				F8C96A16FFA84F5860BC7185BFBA7A17 /* PHAssetVideoSource.swift */,
+				3D5432315C2E903B9501A6AEE0F1B87C /* Source.swift */,
 			);
-			name = Text;
-			path = VideoLab/Text;
+			name = Source;
+			path = VideoLab/Source;
 			sourceTree = "<group>";
 		};
-		5D53E00C2F4EC0A28BBDFCB4F1495F80 /* Development Pods */ = {
+		3358B19B8D5A7F00EE01A386B365F558 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				D1991A0FB843FCEE8FC3C35A178B3826 /* VideoLab */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7442E3C61D05C764D6B5DEAE6B513B70 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				C5C0ECFB4BF75AF6C3E314561E60A6EC /* BasicOperation.swift */,
-				E17792F73D4C119F7E5EDC998045F1B1 /* BlendModeConstants.h */,
-				DDB0EB2D33235F72D8D837E180BC6497 /* BlendOperation.metal */,
-				47D98881E3AA6FD8C476F0AB0D419C99 /* BlendOperation.swift */,
-				9A80CF07F50F28DB83CEFF043687ECDE /* BrightnessAdjustment.metal */,
-				FE8B0936C9C9CB805709F355717CEEF0 /* BrightnessAdjustment.swift */,
-				511C6CBF4690D08D388AB80C5EC85F92 /* ChromaKeying.metal */,
-				8363985290BC3409CDB075D1B49A72DD /* ChromaKeying.swift */,
-				21BD82212C0F3867622A94054A0260F3 /* LookupFilter.metal */,
-				BB8E9FBF60F2E40A03648EDBD643CFFD /* LookupFilter.swift */,
-				D78EF0EE9EDCBC4D458D20C6F99B7FF7 /* OperationConstants.h */,
-				B01F60807C0955D79478D6B89897474B /* OperationShaderTypes.h */,
-				155BB109D17B69E103DB2422CBC43EF4 /* Passthrough.metal */,
-				754E70C2AF22784AAB3E9D6D3AC04F4E /* Passthrough.swift */,
-				4070855EC087346ED78D5DB178972B10 /* YUVToRGBConversion.metal */,
-				085813B9FE3BBD43D14C761E7B38E55D /* YUVToRGBConversion.swift */,
-				8217AFCB5F556A74EDA0B9AAE35D73BC /* ZoomBlur.metal */,
-				46206EC4EBB7A64D712011BDBAFB909F /* ZoomBlur.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		9431FEF2ADC954B620317CD29DF26BD3 /* Pods-VideoLab_Example */ = {
-			isa = PBXGroup;
-			children = (
-				14416CEA0E098543961E6A24250C7687 /* Pods-VideoLab_Example.modulemap */,
-				FA521E2B4F116EE69D9F56ECE673ED9E /* Pods-VideoLab_Example-acknowledgements.markdown */,
-				A4006845EC16763C8CD1B91FCF94BF5C /* Pods-VideoLab_Example-acknowledgements.plist */,
-				547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */,
-				FBD59F7E97631FD18CD03EB58B12151A /* Pods-VideoLab_Example-frameworks.sh */,
-				566DD7435C2561045B02D4585829896B /* Pods-VideoLab_Example-Info.plist */,
-				A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */,
-				5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */,
-				DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */,
-			);
-			name = "Pods-VideoLab_Example";
-			path = "Target Support Files/Pods-VideoLab_Example";
-			sourceTree = "<group>";
-		};
-		A9355A43CA97CAA77B596292C8F1DC59 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9431FEF2ADC954B620317CD29DF26BD3 /* Pods-VideoLab_Example */,
-				E990AC13DDEE2BD6C47EEF1C628866E4 /* Pods-VideoLab_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BEF4BD85E3068648920D69BBAB5A76DA /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				756BF17E9754F322C9ED1D82DE95B4B5 /* VideoCompositor.swift */,
-				3C2C4DF20A2B208CB67E85901A68D7A2 /* VideoCompositionInstruction.swift */,
-				F07BB79E33FED9099B92827B31FB44E9 /* VideoRenderLayer.swift */,
-				613702206BA8BA9ABEDBABEBED754C88 /* VideoRenderLayerGroup.swift */,
-				5BF2BA86198C6490C1564E4245F4A91F /* LayerCompositor.swift */,
+				BB3F4058A54A05528171A31C2724A2E6 /* LayerCompositor.swift */,
+				B6451991EBC0B77AC94C59EEFE09D8B0 /* VideoCompositionInstruction.swift */,
+				FCAE40AA8094844F2D0427B2F6FC6469 /* VideoCompositor.swift */,
+				6333ABCEF2B6E8E0A4E65E7AFFC3A0DB /* VideoRenderLayer.swift */,
+				30E87BFD00C6D9E5FAB59F6F65635D17 /* VideoRenderLayerGroup.swift */,
 			);
 			name = Video;
 			path = VideoLab/Video;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		433BCCE4AA65AE5E1C7D83C32ED26CDA /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				89FCF15F5FC4637C36413CE5EBB110F6 /* Pods-VideoLab_Example */,
+				6C308A6031A17629232E482B0E2684FC /* Pods-VideoLab_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5D53E00C2F4EC0A28BBDFCB4F1495F80 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B26D644D8E22CD1A89AE761FFAD95B50 /* VideoLab */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6C308A6031A17629232E482B0E2684FC /* Pods-VideoLab_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C66172A71C92B9F7C91F15A28B850633 /* Pods-VideoLab_Tests.modulemap */,
+				1BD0C955C5A42FC86F60A3E521043780 /* Pods-VideoLab_Tests-acknowledgements.markdown */,
+				F9246B002CF42AF122879F73BE59F01D /* Pods-VideoLab_Tests-acknowledgements.plist */,
+				053231D7A5936D21A788FC9287535A5F /* Pods-VideoLab_Tests-dummy.m */,
+				38392FAB044D2F86336E8AA7117B2B8D /* Pods-VideoLab_Tests-Info.plist */,
+				28DD42D8BE15D4F4487BD8A945F45029 /* Pods-VideoLab_Tests-umbrella.h */,
+				377E666E95F3056CACFF534C0ED9DD91 /* Pods-VideoLab_Tests.debug.xcconfig */,
+				8826F913E5674049A611F82E1AC41BFF /* Pods-VideoLab_Tests.debug2.xcconfig */,
+				AC29A329BFEB41F99246E92C2243D38C /* Pods-VideoLab_Tests.release.xcconfig */,
+			);
+			name = "Pods-VideoLab_Tests";
+			path = "Target Support Files/Pods-VideoLab_Tests";
+			sourceTree = "<group>";
+		};
+		89FCF15F5FC4637C36413CE5EBB110F6 /* Pods-VideoLab_Example */ = {
+			isa = PBXGroup;
+			children = (
+				438B53F26BBD1307FF303C01868B8D44 /* Pods-VideoLab_Example.modulemap */,
+				AB56A5060F8E4087A96FD779E1A286AA /* Pods-VideoLab_Example-acknowledgements.markdown */,
+				884501B1C56276D51A6A99F2B2BEA694 /* Pods-VideoLab_Example-acknowledgements.plist */,
+				9879862FFCA5269A679A3BF6174E1AFD /* Pods-VideoLab_Example-dummy.m */,
+				CB62531A9FCE298CE07BECAB20FA7B09 /* Pods-VideoLab_Example-frameworks.sh */,
+				E64CBE33E077AA6072634B4945691020 /* Pods-VideoLab_Example-Info.plist */,
+				4138E2AD4B16082E53B9FD207BFB39F2 /* Pods-VideoLab_Example-umbrella.h */,
+				E8FAB934ABF4E697508EEC5C9639F191 /* Pods-VideoLab_Example.debug.xcconfig */,
+				55B9252D06653F3718FF451FAB6D9D23 /* Pods-VideoLab_Example.debug2.xcconfig */,
+				DA032598600D516265DEBD75347960F5 /* Pods-VideoLab_Example.release.xcconfig */,
+			);
+			name = "Pods-VideoLab_Example";
+			path = "Target Support Files/Pods-VideoLab_Example";
+			sourceTree = "<group>";
+		};
+		8F79E51B7212550DC00E6CEB301DBCEC /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				04108379B9D20450C1C1554271FBDFA9 /* BasicOperation.swift */,
+				8C5C87B7EA944AD41BF4EA9579C5D597 /* BlendModeConstants.h */,
+				D9FDE8510E9C14D1D8616F27EF2C2973 /* BlendOperation.metal */,
+				9867CAC260A450FA8745BE05F8D59435 /* BlendOperation.swift */,
+				3CCC95B12692962800D97E78 /* FXAAOperation.metal */,
+				3CCC95B32692963000D97E78 /* FXAAOperation.swift */,
+				FACC6536B26065ADE183E2D3C10C43C5 /* BrightnessAdjustment.metal */,
+				ADAB1D617BC0F38A29F0FC861598F5BB /* BrightnessAdjustment.swift */,
+				74EAA3D8DDD289664009B6BC22A4BE22 /* ChromaKeying.metal */,
+				EAD4D55109D309D5C1D3ECF84617990B /* ChromaKeying.swift */,
+				FDD54E15356717F3F1BA1A4203503988 /* LookupFilter.metal */,
+				175EB9E959CF1E06938E1217988D641F /* LookupFilter.swift */,
+				3D32CEEA9C134D00369CE564B849D5DF /* OperationConstants.h */,
+				F195218B669CBF60763A93C6D6565A16 /* OperationShaderTypes.h */,
+				FA320EBF633A7D5CFDC9828EF7DC7A8E /* Passthrough.metal */,
+				9ACC0E54E757F9FD85265C712AF96B4C /* Passthrough.swift */,
+				4D4C3B5110774B61A38C52F9F70465A7 /* YUVToRGBConversion.metal */,
+				E9C9F6F94B9554A90CA638F0C950FFF4 /* YUVToRGBConversion.swift */,
+				E3110BDBC34D297E773793FAAD5D846A /* ZoomBlur.metal */,
+				A3E3C410299599287FD377C91E755C42 /* ZoomBlur.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		B26D644D8E22CD1A89AE761FFAD95B50 /* VideoLab */ = {
+			isa = PBXGroup;
+			children = (
+				E511732954D1603DB1B26621E80E84C7 /* AudioConfiguration.swift */,
+				D1820B3F861599922575E4D7353C2B35 /* KeyframeAnimation.swift */,
+				3F71E1231D13A405D9239C9B9F24DA4F /* RenderComposition.swift */,
+				0F7E0DC98A0402B1E6203947EB751105 /* RenderLayer.swift */,
+				9F8031FB9A27499C3E5D4358D68470E1 /* RenderLayerGroup.swift */,
+				0F838A30BF273D9D89E89389CC75FCC8 /* TimingFunction.swift */,
+				6F9824892E1D1446C3D18F0627824CAF /* Transform.swift */,
+				0F77B34AF25104661ABFA874BB75B925 /* VideoLab.bundle */,
+				D6511A4BFFD2CE88A258E8D79A82A16B /* VideoLab.swift */,
+				C3A1D35848C700EC2966A72CF331C324 /* Audio */,
+				131482B97388B4CB97382D03543BBC18 /* Pod */,
+				261BE94ABFD347A4176F4021749B2097 /* Render */,
+				26F9F9D039D7622C8B6C3D17B2AEE28B /* Source */,
+				FF7C90CACBD23EC93B387A2078125C4E /* Support Files */,
+				F0ECBFE593ACE408AA072B3DF93B5B4F /* Text */,
+				3358B19B8D5A7F00EE01A386B365F558 /* Video */,
+			);
+			name = VideoLab;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C3A1D35848C700EC2966A72CF331C324 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AD388778D2870F6D4DECE6DE6766B /* AudioRenderLayer.swift */,
+				F607D18D02CA7EA9487A680A77C623A0 /* AudioRenderLayerGroup.swift */,
+			);
+			name = Audio;
+			path = VideoLab/Audio;
 			sourceTree = "<group>";
 		};
 		C52FE030D9B00C7B64E861E19D17F4CE /* Products */ = {
@@ -352,16 +381,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB595AD30245965E7A6B81C6A0A569F7 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				F853A31E2660CA213FCD665A63E3DFD7 /* AudioRenderLayer.swift */,
-				AFF338E4B07A406E5F8414403135EECE /* AudioRenderLayerGroup.swift */,
-			);
-			name = Audio;
-			path = VideoLab/Audio;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -369,103 +388,86 @@
 				5D53E00C2F4EC0A28BBDFCB4F1495F80 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				C52FE030D9B00C7B64E861E19D17F4CE /* Products */,
-				A9355A43CA97CAA77B596292C8F1DC59 /* Targets Support Files */,
+				433BCCE4AA65AE5E1C7D83C32ED26CDA /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1991A0FB843FCEE8FC3C35A178B3826 /* VideoLab */ = {
-			isa = PBXGroup;
-			children = (
-				53A736810B08CDA19B2CCEE0961DFA20 /* VideoLab.swift */,
-				2AE036C491B59D90AA4AD3CF95A17BB2 /* RenderComposition.swift */,
-				B01DCDB95BEA829433210F3550710844 /* RenderLayer.swift */,
-				D084EA2B64CC3976CBC023751EA2C91A /* RenderLayerGroup.swift */,
-				31840DC1A66491D60F73A7C01BB95C21 /* Transform.swift */,
-				EAD85B5D009B0C1542BF7DF509463336 /* AudioConfiguration.swift */,
-				188E42EF87C690489C4C4D71ADEB314C /* KeyframeAnimation.swift */,
-				AD18EBA1246692AB897C3347D94D9738 /* TimingFunction.swift */,
-				42288C6BC75A29E1B9CA047CCA31B04A /* Source */,
-				CB595AD30245965E7A6B81C6A0A569F7 /* Audio */,
-				50361809E50852DB94874E467B1FF5B7 /* Text */,
-				BEF4BD85E3068648920D69BBAB5A76DA /* Video */,
-				4D7097D106BBEBCD8BF5954A185A2B5F /* Render */,
-				EBEE1AFF39ADDF52434EFA15A48ED5FE /* Pod */,
-				F39BAFD0F3EE76A9CC4AE06A06C09E57 /* Resources */,
-				12210FD95D5C92B38BEFEDAEB91DAA6A /* Support Files */,
-			);
-			name = VideoLab;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E990AC13DDEE2BD6C47EEF1C628866E4 /* Pods-VideoLab_Tests */ = {
+		F0ECBFE593ACE408AA072B3DF93B5B4F /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				8FF89E04D31908555CA8534259A4AD52 /* Pods-VideoLab_Tests.modulemap */,
-				873ED94228A7F2D0FA6CFC47983FDDDB /* Pods-VideoLab_Tests-acknowledgements.markdown */,
-				15C96A63BBFD5E689C25EDE8883793C8 /* Pods-VideoLab_Tests-acknowledgements.plist */,
-				D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */,
-				5F5F2927AEABAEBDC0E9E8D3FC9372FA /* Pods-VideoLab_Tests-Info.plist */,
-				98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */,
-				B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */,
-				A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */,
+				8FCFC6CFAD10433CADC87D82CD37D7AE /* TextAnimationLayer.swift */,
+				6ED1FD08737653AE10F70A21929B6557 /* TextOpacityAnimationLayer.swift */,
 			);
-			name = "Pods-VideoLab_Tests";
-			path = "Target Support Files/Pods-VideoLab_Tests";
+			name = Text;
+			path = VideoLab/Text;
 			sourceTree = "<group>";
 		};
-		EBEE1AFF39ADDF52434EFA15A48ED5FE /* Pod */ = {
+		F8F134FF3F663707E80F2DDD5C5E27A9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				746A2D50E480925B6E7FC4D079B0A3D6 /* LICENSE */,
-				8E799945F84B4D88B1C2BD959CBA65F5 /* README.md */,
-				7324476B2A58E28BFC06D016769F7182 /* VideoLab.podspec */,
+				F34AA50C0273206A2E947CE084CAD26F /* Color.swift */,
+				FF9D2EF121AF202B317564A736B347CE /* MathLibrary.swift */,
+				83173415263B6BF6AA7D201BCBA22C4B /* MetalRendering.swift */,
+				84468F22277E724AF69A60BBED9B4812 /* MetalRenderingDevice.swift */,
+				FB41D91E7334090CF02FC5AC06AFF2D7 /* Position.swift */,
+				E29B38E36D27D1F7ADDB384C4D0156F5 /* ShaderUniformSettings.swift */,
+				5DBFD00EFAAB1BCDD0D22DBE8B6F4026 /* Size.swift */,
+				8EF776EF7B520BCC9D1E22157E4EF10E /* Texture.swift */,
+				B2BFEFFCE041C9D666BE780C21537FD2 /* TextureCache.swift */,
 			);
-			name = Pod;
+			path = Base;
 			sourceTree = "<group>";
 		};
-		F39BAFD0F3EE76A9CC4AE06A06C09E57 /* Resources */ = {
+		FF7C90CACBD23EC93B387A2078125C4E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D4A2A7B66965808D791144869936840F /* VideoLab.bundle */,
+				612C8CE233408BF3C392070A431C23D1 /* VideoLab.modulemap */,
+				BAE2DC13A44983CCF3BAC82B84FEA98F /* VideoLab-dummy.m */,
+				0642BD718AE4BDCF67B9F17414DBD2C7 /* VideoLab-Info.plist */,
+				77816F8E7CD49B5E52CD4DEFA26C4784 /* VideoLab-prefix.pch */,
+				5AC5AFD23927027F8E39569C1DA32E11 /* VideoLab-umbrella.h */,
+				BC955123CB2D86735D3B259EEBE9F281 /* VideoLab.debug.xcconfig */,
+				B46796B8AAA3CFD00ED79A8D5C59A865 /* VideoLab.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VideoLab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B207DDC0499DF12C52A461ED353EECB8 /* Headers */ = {
+		1CB0D2D299BEA1CF27E6403C13C9627C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51F9952A00ECCC4090AA1FC427EA39FF /* Pods-VideoLab_Tests-umbrella.h in Headers */,
+				80B7AE5926553D4609CFFE19AE745975 /* Pods-VideoLab_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCB8A59CBCF0C4508DD929A0CC238098 /* Headers */ = {
+		C9CC48209354C70ED265A3C973F26DD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABEB42B8B5437B20D2B8B2A5BC21B5BB /* BlendModeConstants.h in Headers */,
-				AC7E2F33EA15FFAD5D2ACAE2F9B2CA06 /* OperationConstants.h in Headers */,
-				0B97C77ECD9D8680AE948B235D29DDEA /* OperationShaderTypes.h in Headers */,
-				9CB68E4A75CFB21E8EE26B4E4F79B7E0 /* VideoLab-umbrella.h in Headers */,
+				4FE264176F97AF8C5F5C39123F578C09 /* BlendModeConstants.h in Headers */,
+				70B8F59C3A5B3A671A92301A846502F8 /* OperationConstants.h in Headers */,
+				64095DE05D76DF132C9C2FE3669BF89D /* OperationShaderTypes.h in Headers */,
+				1CBA93386516248BBF9929523E9EBED3 /* VideoLab-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C568C0F5F3265253CC0F491E717F6C70 /* Headers */ = {
+		D4D2F4226E75CC1A89F97BCC6ECC6949 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648CC81A67DD8AB10FD77F9DDCF824B3 /* Pods-VideoLab_Example-umbrella.h in Headers */,
+				7EE5EBE2F70888314FC654F951519479 /* Pods-VideoLab_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +476,12 @@
 /* Begin PBXNativeTarget section */
 		90CEAAB26B5599871DFF2C5EEDC63120 /* VideoLab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC841C11ED23B8CA491A6C5E7A5D6326 /* Build configuration list for PBXNativeTarget "VideoLab" */;
+			buildConfigurationList = FF88506FD0F0DC76E16A6CF826218306 /* Build configuration list for PBXNativeTarget "VideoLab" */;
 			buildPhases = (
-				BCB8A59CBCF0C4508DD929A0CC238098 /* Headers */,
-				97C21C3ABF5E9B8099D5DC05322F0EE7 /* Sources */,
-				BD875B2B10362988CEEE6B9EFB7EE6ED /* Frameworks */,
-				E92CD3773B7EE56587FB4A557FAB2D8C /* Resources */,
+				C9CC48209354C70ED265A3C973F26DD6 /* Headers */,
+				A3EC76D0E565AF2F4C00FC812AA7D0DA /* Sources */,
+				839D2CD4A44C4D059FF2FEE856982025 /* Frameworks */,
+				C993EAB78E29B3F6D8A261528E6BF105 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -492,17 +494,17 @@
 		};
 		A788278E713EEC517380E3C6AA693DB9 /* Pods-VideoLab_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AF6F1BE538210E0D045EDDD09D4CA16 /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Example" */;
+			buildConfigurationList = E4401305DCE2024089E28E36D401A5CA /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Example" */;
 			buildPhases = (
-				C568C0F5F3265253CC0F491E717F6C70 /* Headers */,
-				FDBD3D2B3DF2909A49819015BFBA3824 /* Sources */,
-				EE0248C0AD8A17929AE4FB4ECE17CAD9 /* Frameworks */,
-				A11D896DB10CEC79E7A813ED9222C143 /* Resources */,
+				D4D2F4226E75CC1A89F97BCC6ECC6949 /* Headers */,
+				0BA6219123769804D123693F38AAEA11 /* Sources */,
+				4030671C3375B92EDBB1AFB2C9A2703D /* Frameworks */,
+				13F4E1F3A392B7ED6DC0069F265F349D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				080E69DB27E6B802E8C416B4F03B69D8 /* PBXTargetDependency */,
+				8F1394452FD34777ACA69A3A3ABC712B /* PBXTargetDependency */,
 			);
 			name = "Pods-VideoLab_Example";
 			productName = "Pods-VideoLab_Example";
@@ -511,17 +513,17 @@
 		};
 		B7780C4838F1296EA0BCB2A944282CD7 /* Pods-VideoLab_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24AAF15C169F9F1C8256956211EB6AED /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */;
+			buildConfigurationList = D823E17A24D1AFBC7A7F239449FB15AD /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */;
 			buildPhases = (
-				B207DDC0499DF12C52A461ED353EECB8 /* Headers */,
-				BC6403D5E64215C39FCD06C387E1A468 /* Sources */,
-				25F4C00EB20E299BA1ACB056C5528CF4 /* Frameworks */,
-				BB3020AD2E31775442C5A8805394FD5B /* Resources */,
+				1CB0D2D299BEA1CF27E6403C13C9627C /* Headers */,
+				6A615EFC05AAFC82235757A7EA7F4403 /* Sources */,
+				4D619537132449C88311DBF079711BB1 /* Frameworks */,
+				C04704E0F5BBE1C681ABDB582AADD07F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7540137BA0139F9D9874DBF51FA701FF /* PBXTargetDependency */,
+				528A9FC767A241B3248A8ED9B1BEFCAC /* PBXTargetDependency */,
 			);
 			name = "Pods-VideoLab_Tests";
 			productName = "Pods-VideoLab_Tests";
@@ -558,127 +560,195 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A11D896DB10CEC79E7A813ED9222C143 /* Resources */ = {
+		13F4E1F3A392B7ED6DC0069F265F349D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB3020AD2E31775442C5A8805394FD5B /* Resources */ = {
+		C04704E0F5BBE1C681ABDB582AADD07F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E92CD3773B7EE56587FB4A557FAB2D8C /* Resources */ = {
+		C993EAB78E29B3F6D8A261528E6BF105 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A641AE5EC8DAA99D1421751FECB7B9 /* VideoLab.bundle in Resources */,
+				10448A7C798961E7BF8DF1A83D16B996 /* VideoLab.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		97C21C3ABF5E9B8099D5DC05322F0EE7 /* Sources */ = {
+		0BA6219123769804D123693F38AAEA11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599490294E9E495E7B55515224A56E70 /* AudioConfiguration.swift in Sources */,
-				80CCEBC7ADEA33EBC1D110B24C75A2AD /* AudioRenderLayer.swift in Sources */,
-				4EC22247FEBF0C83344F808D5603E5B2 /* AudioRenderLayerGroup.swift in Sources */,
-				23273E8025A591D8BBE4B81426F2DB95 /* AVAssetSource.swift in Sources */,
-				81882F0D4FDC70177CC99F6A5C0699D9 /* BasicOperation.swift in Sources */,
-				6261465511B640B3B342B0084462E8A0 /* BlendOperation.metal in Sources */,
-				5EED15BB0265CB0C16921595B25E8747 /* BlendOperation.swift in Sources */,
-				4D44D1ADEE845561FE05AEB743197BDD /* BrightnessAdjustment.metal in Sources */,
-				2DA4D68128ACCF3AC942E93E6E283D1D /* BrightnessAdjustment.swift in Sources */,
-				2F2EC57A2930D79F4C42930E0A0D6DF8 /* ChromaKeying.metal in Sources */,
-				1C6F8C4C13E6B56D8B59638165F480F0 /* ChromaKeying.swift in Sources */,
-				963B488845309DA7EA417FF07CCD1BFC /* Color.swift in Sources */,
-				B8E15D25DD6806DC4585EFD229DDCEE4 /* ImageSource.swift in Sources */,
-				618A9C5123386CB67FA02D52A79614EB /* KeyframeAnimation.swift in Sources */,
-				2FB5E2DC71E1045CCE7B5F71ABB970C3 /* LayerCompositor.swift in Sources */,
-				E30023C70C18EB4A18CA03F65040573D /* LookupFilter.metal in Sources */,
-				63AEC0BA1B5FB53EAA41EF9D49E576CD /* LookupFilter.swift in Sources */,
-				A8DA27E656DB7DF393C137F4520556AB /* MathLibrary.swift in Sources */,
-				F95388B15AF13CA8793C83837B629008 /* MetalRendering.swift in Sources */,
-				4E81707A70D47E98203FAFADDB82D9BD /* MetalRenderingDevice.swift in Sources */,
-				C4EF5EF700D1B65676B7D48724136BE9 /* Passthrough.metal in Sources */,
-				1DBE65D591607A8B66D35F5FFBB1460D /* Passthrough.swift in Sources */,
-				F8E127494EA28FA52EAE3E1388EE7E25 /* PHAssetImageSource.swift in Sources */,
-				9BDD23FE5C27111581D02C02451545C4 /* PHAssetVideoSource.swift in Sources */,
-				32BB1FCA12DF0724180060E46DFF62BF /* Position.swift in Sources */,
-				BA79FEA092AA64C15D6E93C21E87FE44 /* RenderComposition.swift in Sources */,
-				E53B640CF8C444B562D7AF0CB196D1C3 /* RenderLayer.swift in Sources */,
-				2B40FC4D51C74E3F98ABE389EA436719 /* RenderLayerGroup.swift in Sources */,
-				395ED122BE8B47D5ACC15FCA1C78BFA1 /* ShaderUniformSettings.swift in Sources */,
-				8EC08956C6DE1D575593DC642FAFC4DE /* Size.swift in Sources */,
-				F54A52049EDF932FDC3943CDA9B11EF7 /* Source.swift in Sources */,
-				C4D6D2371B54B90F96F9B3565DB61E0C /* TextAnimationLayer.swift in Sources */,
-				AC52707D8C09D4A18C6B434EF9F51696 /* TextOpacityAnimationLayer.swift in Sources */,
-				904CE69737E719112D27320040A30A87 /* Texture.swift in Sources */,
-				5A0154F0EE8D3402BD5617A6329E7CE6 /* TextureCache.swift in Sources */,
-				29356462A9DFE0469CF2FBF4640C484C /* TimingFunction.swift in Sources */,
-				45414D0A3630FA094619019327C038B5 /* Transform.swift in Sources */,
-				E99D61B3A8C7D3475405C40359027282 /* VideoCompositionInstruction.swift in Sources */,
-				ADD7B28B1DBFCA0D95378F31B7EE181A /* VideoCompositor.swift in Sources */,
-				56EF466572883EBBA788D369DE9252F3 /* VideoLab-dummy.m in Sources */,
-				559026D63970C3F5B2F4ECD21BB57ADC /* VideoLab.swift in Sources */,
-				AC898A4F2814FFE916EEBE432E8C07C0 /* VideoRenderLayer.swift in Sources */,
-				074CEE63C9578A0193FF6D30481BC322 /* VideoRenderLayerGroup.swift in Sources */,
-				0C6AA39EAA31E716A35696D6F57F8891 /* YUVToRGBConversion.metal in Sources */,
-				ED53CAA312A27B86F3AFC1242DB27C5F /* YUVToRGBConversion.swift in Sources */,
-				75BA5B1679C60CAEB5D3A7E5797A4E39 /* ZoomBlur.metal in Sources */,
-				A9E9334A94255D06BA75B1986AA022D0 /* ZoomBlur.swift in Sources */,
+				86D2CDA7E98B0A839C7CB674D4810276 /* Pods-VideoLab_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC6403D5E64215C39FCD06C387E1A468 /* Sources */ = {
+		6A615EFC05AAFC82235757A7EA7F4403 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56BAB8B8CCE647F11C4C964FF32086D /* Pods-VideoLab_Tests-dummy.m in Sources */,
+				B94DD60C8EDE7C3B9DD583E931FEC41A /* Pods-VideoLab_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDBD3D2B3DF2909A49819015BFBA3824 /* Sources */ = {
+		A3EC76D0E565AF2F4C00FC812AA7D0DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1792F9829DAB806B2AF2CEBE7F2AA8 /* Pods-VideoLab_Example-dummy.m in Sources */,
+				806F5D6CAB6D0BF9D8D3B4BD8277E9CF /* AudioConfiguration.swift in Sources */,
+				019045F21092770B161426A249C84517 /* AudioRenderLayer.swift in Sources */,
+				81A4B4AE5CAE4D99498B25673E5C2143 /* AudioRenderLayerGroup.swift in Sources */,
+				FF816A330221B20A1EB6E7C42F8D4C60 /* AVAssetSource.swift in Sources */,
+				CEB358EC7F15401AE0C6703304BB86A4 /* BasicOperation.swift in Sources */,
+				B7415857548FF342D71C7DE68A90B761 /* BlendOperation.metal in Sources */,
+				7A2AFB464AABA1A4DA57C2BE4CEA5425 /* BlendOperation.swift in Sources */,
+				8AB1E966645F34E8FA71FB50DD5CB13A /* BrightnessAdjustment.metal in Sources */,
+				2217C745BA2FA663EF3C1256D3C1C396 /* BrightnessAdjustment.swift in Sources */,
+				8295CE0898A0EDA00BAFC9746889576B /* ChromaKeying.metal in Sources */,
+				23F75A6799C2DC1FD23E9541BCA3559F /* ChromaKeying.swift in Sources */,
+				0D3140D7CA1F7FA10AE0307F740E4809 /* Color.swift in Sources */,
+				90F314301CFE47E2227CA39E09099314 /* ImageSource.swift in Sources */,
+				CBD62896ABA3141F0C6A289EDDA1F9CD /* KeyframeAnimation.swift in Sources */,
+				577E23AC33DEE5DDC9A1FB74C44E16CF /* LayerCompositor.swift in Sources */,
+				56119D2F1F6D7024B2202C940F60B57B /* LookupFilter.metal in Sources */,
+				6D263BF55E317436B20AD9A72BD45546 /* LookupFilter.swift in Sources */,
+				D916904CD78E48E2670788A3BF6F6CD1 /* MathLibrary.swift in Sources */,
+				88C736E9991259DA7B786BA8D9BDE983 /* MetalRendering.swift in Sources */,
+				8FE90357FD0CDAC3FDC392DC9F475DFE /* MetalRenderingDevice.swift in Sources */,
+				AC6B650CA9804D057FCC6B942421EB7A /* Passthrough.metal in Sources */,
+				3CCC95B22692962800D97E78 /* FXAAOperation.metal in Sources */,
+				7E2EBE444BA6C92D82C04CA959091219 /* Passthrough.swift in Sources */,
+				5A48E87602B9AD4F476C1668D282D463 /* PHAssetImageSource.swift in Sources */,
+				207172E8FD113D3EDD0E247B2DD529F6 /* PHAssetVideoSource.swift in Sources */,
+				901A380667E5BD8FE8A1986834D78FCF /* Position.swift in Sources */,
+				BAD9C94CC928371032C026B7504E0718 /* RenderComposition.swift in Sources */,
+				EAC0ED27EA84D4385AE50444DD6DF0D2 /* RenderLayer.swift in Sources */,
+				97138B762E6BEC4D124B49B9D5126B93 /* RenderLayerGroup.swift in Sources */,
+				E96C3E91F942066D1D0C1595C5EA4A8E /* ShaderUniformSettings.swift in Sources */,
+				F04AC2F0F475311D2E3922BAFA3637B1 /* Size.swift in Sources */,
+				691769A59A56AE8B7F808563DC5EC7BB /* Source.swift in Sources */,
+				F51A30D6599F8BBA20A8287011341838 /* TextAnimationLayer.swift in Sources */,
+				EAA4A5BDEDD6F188DB65F4E09B902CCD /* TextOpacityAnimationLayer.swift in Sources */,
+				CDD3F69E1EFFAD257403800887A67A54 /* Texture.swift in Sources */,
+				DD99CCB1DA8F4F531DBFE74F06BAB2E7 /* TextureCache.swift in Sources */,
+				171BBFD76B868B861E2C92AF64CF2065 /* TimingFunction.swift in Sources */,
+				5172A76F87C6FF0FA03F58BE5706FB7B /* Transform.swift in Sources */,
+				A360B25FF36FAFCBB3388ED3FE8F8B9B /* VideoCompositionInstruction.swift in Sources */,
+				C56C8A4FCFF6C9F9356F37A14CD09309 /* VideoCompositor.swift in Sources */,
+				6DC928D8CEAE67C52C59740596434355 /* VideoLab-dummy.m in Sources */,
+				3F756F91470C4176ABC7BA98E6E5FE22 /* VideoLab.swift in Sources */,
+				D7F85B7BD5ECDFC734FDE175C0C84D05 /* VideoRenderLayer.swift in Sources */,
+				E35FD552C0E137C54FE4F9764BE2FB16 /* VideoRenderLayerGroup.swift in Sources */,
+				73C3AC08D843862E07797E6061F85626 /* YUVToRGBConversion.metal in Sources */,
+				2FAECE5A969B23F78573CD2DE6B5C03B /* YUVToRGBConversion.swift in Sources */,
+				3CCC95B42692963000D97E78 /* FXAAOperation.swift in Sources */,
+				132F36ACE1AF23A11D23A91017738A9E /* ZoomBlur.metal in Sources */,
+				0C644AF2536D0AFD718DEB05F0628998 /* ZoomBlur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		080E69DB27E6B802E8C416B4F03B69D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VideoLab;
-			target = 90CEAAB26B5599871DFF2C5EEDC63120 /* VideoLab */;
-			targetProxy = 7B176E54545F526EC45B925CA4369111 /* PBXContainerItemProxy */;
-		};
-		7540137BA0139F9D9874DBF51FA701FF /* PBXTargetDependency */ = {
+		528A9FC767A241B3248A8ED9B1BEFCAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-VideoLab_Example";
 			target = A788278E713EEC517380E3C6AA693DB9 /* Pods-VideoLab_Example */;
-			targetProxy = 99FA461DBB6EF0FAA970AF80C0A43464 /* PBXContainerItemProxy */;
+			targetProxy = 64536EFC1945CC622631FFCFADE9B681 /* PBXContainerItemProxy */;
+		};
+		8F1394452FD34777ACA69A3A3ABC712B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoLab;
+			target = 90CEAAB26B5599871DFF2C5EEDC63120 /* VideoLab */;
+			targetProxy = EE70229F53F06B7E07C940C282D39E65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		032AB86BB307B01A564A9CD0A8C802D1 /* Release */ = {
+		2067E4C669124F171035A9AE0C9E7579 /* Debug2 */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */;
+			baseConfigurationReference = 55B9252D06653F3718FF451FAB6D9D23 /* Pods-VideoLab_Example.debug2.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug2;
+		};
+		24B9686264FE3BFF26DBA2E5AC5E9DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC955123CB2D86735D3B259EEBE9F281 /* VideoLab.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoLab/VideoLab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoLab/VideoLab-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoLab/VideoLab.modulemap";
+				PRODUCT_MODULE_NAME = VideoLab;
+				PRODUCT_NAME = VideoLab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BD40C34E85E2A2D0048229A61AC7F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA032598600D516265DEBD75347960F5 /* Pods-VideoLab_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -707,10 +777,112 @@
 			};
 			name = Release;
 		};
-		257497152829C177993B5EC99C1D227A /* Release */ = {
+		410B0D404D5A75D932DAC116F9F5C3DC /* Debug2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46796B8AAA3CFD00ED79A8D5C59A865 /* VideoLab.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoLab/VideoLab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoLab/VideoLab-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoLab/VideoLab.modulemap";
+				PRODUCT_MODULE_NAME = VideoLab;
+				PRODUCT_NAME = VideoLab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug2;
+		};
+		445A343401DC3CDA4E31F0FEFE9264C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46796B8AAA3CFD00ED79A8D5C59A865 /* VideoLab.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoLab/VideoLab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoLab/VideoLab-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoLab/VideoLab.modulemap";
+				PRODUCT_MODULE_NAME = VideoLab;
+				PRODUCT_NAME = VideoLab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		496DA3B46E11FEE51B22F2BDA6A48686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC29A329BFEB41F99246E92C2243D38C /* Pods-VideoLab_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -733,6 +905,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -766,150 +939,11 @@
 			};
 			name = Release;
 		};
-		5B84FB0AE4520C82DBC1E2E026016028 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5562BF50D43174C8362485CF45114629 /* VideoLab.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VideoLab/VideoLab-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VideoLab/VideoLab-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VideoLab/VideoLab.modulemap";
-				PRODUCT_MODULE_NAME = VideoLab;
-				PRODUCT_NAME = VideoLab;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6A2F6F20AB9F48C03241739706CD4F48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B6C0305CB6C29D20F83A553251E9A138 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CE5EAB5489FB61449A7BAFB9C30D0FC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -932,6 +966,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -970,13 +1005,13 @@
 			};
 			name = Debug;
 		};
-		E0E1805EAA012C813FCCBA738660B251 /* Debug */ = {
+		C5112004C2DC0555DC4705B8D613DCD0 /* Debug2 */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0BBBCBF9ED5B8A0DCFBD292244ACD45 /* VideoLab.debug.xcconfig */;
+			baseConfigurationReference = 8826F913E5674049A611F82E1AC41BFF /* Pods-VideoLab_Tests.debug2.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -985,18 +1020,149 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VideoLab/VideoLab-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VideoLab/VideoLab-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VideoLab/VideoLab.modulemap";
-				PRODUCT_MODULE_NAME = VideoLab;
-				PRODUCT_NAME = VideoLab;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug2;
+		};
+		ED12D856B7C6E8634BDA6AB95A7E4A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FAB934ABF4E697508EEC5C9639F191 /* Pods-VideoLab_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F45A991F8800C9AA6FFABA6B67E564D1 /* Debug2 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG2=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug2;
+		};
+		F7891A4C811C722CCA684DD6E929EA00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377E666E95F3056CACFF534C0ED9DD91 /* Pods-VideoLab_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1006,38 +1172,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24AAF15C169F9F1C8256956211EB6AED /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A2F6F20AB9F48C03241739706CD4F48 /* Debug */,
-				B6C0305CB6C29D20F83A553251E9A138 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
-				257497152829C177993B5EC99C1D227A /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				F45A991F8800C9AA6FFABA6B67E564D1 /* Debug2 */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AF6F1BE538210E0D045EDDD09D4CA16 /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Example" */ = {
+		D823E17A24D1AFBC7A7F239449FB15AD /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE5EAB5489FB61449A7BAFB9C30D0FC9 /* Debug */,
-				032AB86BB307B01A564A9CD0A8C802D1 /* Release */,
+				F7891A4C811C722CCA684DD6E929EA00 /* Debug */,
+				C5112004C2DC0555DC4705B8D613DCD0 /* Debug2 */,
+				496DA3B46E11FEE51B22F2BDA6A48686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC841C11ED23B8CA491A6C5E7A5D6326 /* Build configuration list for PBXNativeTarget "VideoLab" */ = {
+		E4401305DCE2024089E28E36D401A5CA /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E1805EAA012C813FCCBA738660B251 /* Debug */,
-				5B84FB0AE4520C82DBC1E2E026016028 /* Release */,
+				ED12D856B7C6E8634BDA6AB95A7E4A31 /* Debug */,
+				2067E4C669124F171035A9AE0C9E7579 /* Debug2 */,
+				2BD40C34E85E2A2D0048229A61AC7F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF88506FD0F0DC76E16A6CF826218306 /* Build configuration list for PBXNativeTarget "VideoLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B9686264FE3BFF26DBA2E5AC5E9DCC /* Debug */,
+				410B0D404D5A75D932DAC116F9F5C3DC /* Debug2 */,
+				445A343401DC3CDA4E31F0FEFE9264C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

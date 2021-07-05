@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import VideoLab
+import GLKit
 
 class ViewController: UITableViewController {
     var lutTextures: [Texture] = []
@@ -430,9 +431,12 @@ class ViewController: UITableViewController {
         imageSource.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: timeRange.duration)
         timeRange = imageSource.selectedTimeRange
         let renderLayer1 = RenderLayer(timeRange: timeRange, source: imageSource)
-        
+
+		// 添加旋转
+		let rotation = GLKMathDegreesToRadians(15)
+
         var center = CGPoint(x: 0.5, y: 0.5)
-        var transform = Transform(center: center, rotation: 0, scale: 0.35)
+        var transform = Transform(center: center, rotation: rotation, scale: 0.35)
         renderLayer1.transform = transform
         
         // Add sub-renderLayer2
@@ -444,7 +448,7 @@ class ViewController: UITableViewController {
         let renderLayer2 = RenderLayer(timeRange: timeRange, source: source)
         
         center = CGPoint(x: 0.25, y: 0.25)
-        transform = Transform(center: center, rotation: 0, scale: 0.5)
+        transform = Transform(center: center, rotation: rotation, scale: 0.5)
         renderLayer2.transform = transform
         
         // Sets the layer array for the layer group

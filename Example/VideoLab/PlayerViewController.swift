@@ -13,7 +13,8 @@ import VideoLab
 class PlayerViewController: AVPlayerViewController {
     var videoLab: VideoLab
     var exportSession: AVAssetExportSession?
-    
+	var exportTimer: Timer?
+
     init(videoLab: VideoLab) {
         self.videoLab = videoLab
         super.init(nibName: nil, bundle: nil)
@@ -27,6 +28,12 @@ class PlayerViewController: AVPlayerViewController {
         super.viewDidLoad()
         setupNavigationItem()
     }
+
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(animated)
+		exportTimer?.invalidate()
+		exportSession?.cancelExport()
+	}
 
     // MARK: - Private
     
@@ -54,21 +61,38 @@ class PlayerViewController: AVPlayerViewController {
             } catch {
             }
         }
-        
+
+		exportSession?.cancelExport()
+
         exportSession = videoLab.makeExportSession(presetName: AVAssetExportPresetHighestQuality, outputURL: outputURL)
+		exportSession?.shouldOptimizeForNetworkUse = true
+		
         exportSession?.exportAsynchronously(completionHandler: {
             switch self.exportSession?.status {
             case .completed:
                 self.saveFileToAlbum(outputURL)
+				self.exportTimer?.invalidate()
+				self.exportTimer = nil
+				self.exportSession = nil
                 print("export completed")
             case .failed:
-                print("export failed")
+				print("export failed", self.exportSession?.error)
+				self.exportSession = nil
             case .cancelled:
                 print("export cancelled")
+				self.exportSession = nil
             default:
                 print("export")
             }
         })
+
+		exportTimer?.invalidate()
+
+		exportTimer = Timer(timeInterval: 0.15, repeats: true, block: { _ in
+			print("export progess: \(self.exportSession?.progress ?? 0) \( self.exportSession?.status.rawValue)")
+		})
+
+		RunLoop.main.add(exportTimer!, forMode: .common)
     }
     
     func requestLibraryAuthorization(_ handler: @escaping (PHAuthorizationStatus) -> Void) {
